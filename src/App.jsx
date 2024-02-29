@@ -10,6 +10,7 @@ import Register from './pages/Register/Register'
 import CreatePost from './pages/CreatePost/CreatePost'
 import Dashboard from './pages/Dashboard/Dashboard'
 import Search from './pages/Search/Search'
+import Post from './pages/Post/Post'
 
 // Components
 import Navbar from './components/Navbar/Navbar'
@@ -52,6 +53,7 @@ function App() {
                         <Route path='/' element={<Home/>}/>
                         <Route path='/About' element={<About/>}/>
                         <Route path='/search' element={<Search/>}/>
+                        <Route path='/Posts/:id' element={<Post/>}/>
                         <Route path='/Login' element={!user ? <Login/> : <Navigate to="/Home"/> }/>
                         <Route path='/Register' element={!user ? <Register/> : <Navigate to="/Home"/>}/>
                         <Route path='/Posts/Create' element={user ? <CreatePost/> : <Navigate to="/Login"/>}/>
