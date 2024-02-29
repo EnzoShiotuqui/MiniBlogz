@@ -11,7 +11,7 @@ const Navbar = () => {
     const { logout } = useAuthentication()
   return (
         <nav className={styles.navbar}>
-            <NavLink to="/" className={styles.brand}>Mini <span>BlogZ</span></NavLink>
+            <NavLink to="/" className={styles.brand}>Raccoon<span>Blog</span></NavLink>
             <ul className={styles.links_list}>
                 <li>
                     <NavLink to="/" className={({isActive}) => (isActive ? styles.active : '')}>Home</NavLink>
