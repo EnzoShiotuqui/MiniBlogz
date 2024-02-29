@@ -48,6 +48,9 @@ Rode
   npm run dev 
 ```
 
+## Screenshot
+![screenshot](print.png)
+
 ## Authors
 
 - [@enzoshiotuqui](https://github.com/EnzoShiotuqui)
