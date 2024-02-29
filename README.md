@@ -1,36 +1,6 @@
 
 
 
-Instalação e Execução
-Para executar localmente o projeto, siga os passos abaixo:
-
-Clone o Repositório:
-
-bash
-Copy code
-git clone https://github.com/seu-usuario/raccom-blog.git
-Instale as Dependências:
-
-bash
-Copy code
-cd raccom-blog
-npm install
-
-
-Execute o Projeto:
-
-sql
-Copy code
-npm run dev
-
-
-Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
-
-Contato
-Para qualquer dúvida ou sugestão relacionada a este projeto, sinta-se à vontade para entrar em contato através do email: eshiotuqui@gmail.com
-
-
 # Raccom Blog
 
 O Raccom Blog é uma plataforma de blogging que combina um front-end desenvolvido com React e um backend hospedado no Firebase. Esta aplicação oferece uma experiência completa para os usuários, permitindo-lhes registrar-se, fazer login de forma segura, criar e compartilhar posts com texto e imagens. Além disso, inclui um painel de controle intuitivo para a gestão de posts.
