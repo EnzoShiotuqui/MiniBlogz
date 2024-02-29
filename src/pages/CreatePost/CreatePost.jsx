@@ -7,7 +7,7 @@ import { useAuthValue } from "../../context/AuthContext";
 
 const CreatePost = () => {
   const [title, setTitle] = useState("");
-  const [image, setImage] = useState("");
+  const [imageFile, setImageFile] = useState(null);
   const [body, setBody] = useState("");
   const [tags, setTags] = useState([]);
   const [formError, setFormError] = useState("");
@@ -22,37 +22,24 @@ const CreatePost = () => {
     e.preventDefault();
     setFormError("");
 
-    // validate image
-    try {
-      new URL(image);
-    } catch (error) {
-      setFormError("A imagem precisa ser uma URL.");
+    // Check if image is selected
+    if (!imageFile) {
+      setFormError("Por favor, selecione uma imagem.");
+      return;
     }
 
     // create tags array
     const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());
 
     // check values
-    if (!title || !image || !tags || !body) {
+    if (!title || !imageFile || !tags || !body) {
       setFormError("Por favor, preencha todos os campos!");
+      return;
     }
-
-    console.log(tagsArray);
-
-    console.log({
-      title,
-      image,
-      body,
-      tags: tagsArray,
-      uid: user.uid,
-      createdBy: user.displayName,
-    });
-
-    if(formError) return
 
     insertDocument({
       title,
-      image,
+      image: URL.createObjectURL(imageFile),
       body,
       tags: tagsArray,
       uid: user.uid,
@@ -79,17 +66,19 @@ const CreatePost = () => {
             value={title}
           />
         </label>
-        <label>
-          <span>URL da imagem:</span>
-          <input
-            type="text"
-            name="image"
-            required
-            placeholder="Insira uma imagem que representa seu post"
-            onChange={(e) => setImage(e.target.value)}
-            value={image}
-          />
-        </label>
+        <div className={styles.file_wrapper}>
+          <h4>Imagem:</h4>
+          <label className={styles.custom_file_label}>
+            Enviar seu arquivo
+            <input
+              type="file"
+              required
+              placeholder="Selecione um arquivo"
+              className={styles.custom_file_input}
+              onChange={(e) => setImageFile(e.target.files[0])}
+            />
+          </label>
+        </div>
         <label>
           <span>Conteúdo:</span>
           <textarea

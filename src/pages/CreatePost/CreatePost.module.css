@@ -10,3 +10,35 @@
     color: #aaa;
     margin-bottom: 2em;
 }
+
+
+  
+
+  .custom_file_label {
+    display:flex;
+    padding: .8em 2em;
+    background-color: #0f730c;
+    color: #fff; 
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+  }
+  
+  .custom_file_input {
+    display: none; 
+  }
+
+ .file_wrapper h4 {
+    text-align: left;
+    font-size: 15px;
+ }
+
+ .custom_file_label:hover { 
+    background-color: #0a4b07;
+ }
+
+
+  
+ 
+
+  
