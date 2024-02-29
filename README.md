@@ -18,12 +18,11 @@ React: Uma biblioteca JavaScript de código aberto para a construção de interf
 
 Firebase: Uma plataforma de desenvolvimento de aplicativos móveis e web desenvolvida pelo Google. No caso deste projeto, é utilizado para o armazenamento de dados, autenticação de usuários e hospedagem do backend.
 
-
 ## Link
 
-- [Deploy-Site](https://enzoshiotuqui.github.io/QR_CODE_GENERATOR/)
+- [Deploy-Site](https://racoomblog.netlify.app/)
 
-## Run Locally
+## Rodar localmente
 
 Clone o projeto
 
@@ -37,14 +36,17 @@ Vá até o projeto
   cd my-project
 ```
 
+Instales as dependências
 
+```bash
+  npm install
+```
 
+Rode
 
-
-## ScreenShot
-
-
-![screenshot](print.png)
+```bash
+  npm run dev 
+```
 
 ## Authors
 
