@@ -1,46 +1,23 @@
 .edit_post {
-    text-align: center;
-  }
-  
-  .edit_post h2 {
-    font-size: 2.2em;
-  }
-  
-  .edit_post p {
-    color: #aaa;
-    margin-bottom: 2em;
-  }
-  
-  .edit_post .preview_title {
-    margin-bottom: 0.2em;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  .image_preview {
-    max-width: 100%;
-    margin-bottom: 1em;
-  }
-  
-  .custom_file_label {
-    display:flex;
-    padding: .8em 2em;
-    background-color: #0f730c;
-    color: #fff; 
-    border-radius: 5px;
-    transition: .4s;
-    cursor: pointer;
-  }
-  
-  .custom_file_input {
-    display: none; 
-  }
+  text-align: center;
+}
 
- .file_wrapper h4 {
-    text-align: left;
-    font-size: 15px;
- }
+.edit_post h2 {
+  font-size: 2.2em;
+}
 
- .custom_file_label:hover { 
-    background-color: #0a4b07;
- }
+.edit_post p {
+  color: #aaa;
+  margin-bottom: 2em;
+}
+
+.edit_post .preview_title {
+  margin-bottom: 0.2em;
+  color: #000;
+  font-weight: bold;
+}
+
+.image_preview {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
